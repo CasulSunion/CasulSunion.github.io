@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>stc</title>
-              <style type="text/css">
+        <title>test</title>
+                <style type="text/css">
             body {
                 background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
@@ -80,8 +80,8 @@
         </style>
     </head>
     <body>
-                <nav>
-            <header>Beware</header>
+             <nav>
+            <header>test</header>
             <ul>
                 <li><a href="index.html">Home</a>
                 </li>
@@ -96,6 +96,7 @@
                 </ul>
             </div>
         </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
     </body>
 </html>
-<!DOCTYPE html>
